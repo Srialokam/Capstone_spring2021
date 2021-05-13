@@ -1,3 +1,4 @@
 # Capstone_spring2021
-## Code folder contains two .ipynb notebooks.
-### Part-1.ipynb 
+## Code-folder contains two .ipynb notebooks.
+### Part-1.ipynb : Deals with Data collection and other EDA process. Data sets are collected from https://github.com/aaravindravi/A-Dataset-and-Preliminary-Results-for-Umpire-Pose-Detection-Using-SVM-Classification-of-Deep-Feature/tree/master/data website and features are extracted using VGG19 pre-trained CNN model and trained models with the help of saved features and if signicant accuracy scores are recorded, SAVE THE MODEL.
+### Savedmodelvalidate.iplynb conatins implementation of constructed model with an input video. By splitting input video into multiplr frames and saving them in temporary directory. Pick 2 frames per second and evaluate content inside the frame. Loaded models work to classify image according to content and returns if applicable. Once all the available frames are processed , Post-processing of frames retured is carried to obtain seconds from frame numbers and using 'ffmpeg' new clips of highlights are trimmed.
